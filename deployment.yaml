@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-pipeline
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-pipeline
+  template:
+    metadata:
+      labels:
+        app: my-pipeline
+    spec:
+      containers:
+      - name: my-pipeline
+        image: palecanary/my-pipeline:latest
+        ports:
+        - containerPort: 3000
