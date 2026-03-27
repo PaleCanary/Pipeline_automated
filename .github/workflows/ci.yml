@@ -46,4 +46,4 @@ jobs:
           docker pull palecanary/my-pipeline:latest
           docker stop my-pipeline || true
           docker rm my-pipeline || true
-          docker run -d -p 3000:3000 --name my pipeline palecanary/my-pipeline:latest
+          docker run -d -p 3000:3000 --name my-pipeline palecanary/my-pipeline:latest
