@@ -46,3 +46,5 @@ kubectl get pods
 ## Overview
 
 push to GitHub main > test with Actions > docker build image > push to docker hub > SSH to EC2 > app live
+
+Author: Arinchai + PaleCanary (Same Person)
